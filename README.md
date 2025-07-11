@@ -58,7 +58,7 @@ venv/bin/python main.py
 
 ## 🖼️ Aperçu / Preview
 
-*(Ajoutez ici une capture d’écran si souhaité)*
+![Capture](images/capture1.png)
 
 ## 📄 Licence
 
