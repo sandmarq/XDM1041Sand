@@ -19,3 +19,4 @@ __pycache__/
 # Systèmes Unix/Mac
 .DS_Store
 
+.env
