@@ -56,8 +56,7 @@ python main.py --port /dev/ttyUSB0 --graph
 - `--graph` *(optionnel / optional)* : Active l'affichage du graphique en temps réel.  
   Enables the real-time measurement graph display. Without this option, the interface is more compact.
 
-## 🐧 Dépendances Linux (si Qt ne se lance pas)  
-## 🐧 Linux Dependencies (if Qt doesn't start)
+## 🐧 Dépendances Linux (si Qt ne se lance pas) / Linux Dependencies (if Qt doesn't start)
 
 🇫🇷 Si vous avez une erreur Qt de type `Could not load the Qt platform plugin "xcb"` lors du démarrage de l'application, vous devez installer quelques bibliothèques système.  
 🇬🇧 If you get a Qt error like `Could not load the Qt platform plugin "xcb"` when launching the app, you need to install some system libraries.
