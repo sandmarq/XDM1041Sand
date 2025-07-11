@@ -16,7 +16,7 @@
 ### Cloner le projet / Clone the project
 
 ```bash
-git clone https://github.com/sandmarq/XDM1041Python.git
+git clone https://github.com/sandmarq/XDM1041Sand.git
 cd XDM1041Python
 ```
 
