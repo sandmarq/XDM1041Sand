@@ -5,10 +5,10 @@
 
 ## 🇫🇷 Fonctionnalités / 🇬🇧 Features
 
-- Connexion série avec commandes SCPI / Serial SCPI connection
-- Affichage du mode, plage et mesure / Mode, range, and measurement display
-- Thème sombre épuré / Clean dark theme
-- Graphique optionnel / Optional measurement graph
+- Connexion série avec commandes SCPI / Serial SCPI connection  
+- Affichage du mode, plage et mesure / Mode, range, and measurement display  
+- Thème sombre épuré / Clean dark theme  
+- Graphique optionnel / Optional measurement graph  
 - Configuration via `.env`
 
 ## 📦 Installation
@@ -47,14 +47,12 @@ GRAPH=True
 ## ▶️ Lancer l'application / Run the application
 
 ```bash
-python main.py
+python main.py --port /dev/ttyUSB0 --graph
 ```
 
-ou avec l’environnement virtuel activé :
-
-```bash
-venv/bin/python main.py
-```
+- `--port` : Spécifie le port série utilisé par le multimètre (ex. `/dev/ttyUSB0` sous Linux).  
+- `--graph` *(optionnel)* : Active l'affichage du graphique en temps réel de la mesure.  
+  Sans cette option, l'interface est plus compacte et affiche uniquement les valeurs actuelles.
 
 ## 🖼️ Aperçu / Preview
 
