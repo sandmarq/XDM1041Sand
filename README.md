@@ -17,7 +17,7 @@
 
 ```bash
 git clone https://github.com/sandmarq/XDM1041Sand.git
-cd XDM1041Python
+cd XDM1041Sand
 ```
 
 ### Créer un environnement virtuel / Create a virtual environment
@@ -35,7 +35,8 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration (.env)
 
-Créez un fichier `.env` à la racine avec le contenu suivant (ou laissez vide pour les valeurs par défaut) :
+Créez un fichier `.env` à la racine avec le contenu suivant (ou laissez vide pour les valeurs par défaut) :  
+Create a `.env` file at the root with the following content (or leave it empty to use defaults):
 
 ```env
 PORT=/dev/ttyUSB0
@@ -51,8 +52,30 @@ python main.py --port /dev/ttyUSB0 --graph
 ```
 
 - `--port` : Spécifie le port série utilisé par le multimètre (ex. `/dev/ttyUSB0` sous Linux).  
-- `--graph` *(optionnel)* : Active l'affichage du graphique en temps réel de la mesure.  
-  Sans cette option, l'interface est plus compacte et affiche uniquement les valeurs actuelles.
+  Specifies the serial port used by the multimeter (e.g., `/dev/ttyUSB0` on Linux).  
+- `--graph` *(optionnel / optional)* : Active l'affichage du graphique en temps réel.  
+  Enables the real-time measurement graph display. Without this option, the interface is more compact.
+
+## 🐧 Dépendances Linux (si Qt ne se lance pas)  
+## 🐧 Linux Dependencies (if Qt doesn't start)
+
+🇫🇷 Si vous avez une erreur Qt de type `Could not load the Qt platform plugin "xcb"` lors du démarrage de l'application, vous devez installer quelques bibliothèques système.  
+🇬🇧 If you get a Qt error like `Could not load the Qt platform plugin "xcb"` when launching the app, you need to install some system libraries.
+
+### 🔧 Pour Arch Linux, Manjaro, CachyOS, EndeavourOS :
+
+```bash
+sudo pacman -S libxcb xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm libxkbcommon-x11 qt6-base xcb-util-cursor
+```
+
+### 🔧 Pour Debian, Ubuntu, Linux Mint :
+
+```bash
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0
+```
+
+🇫🇷 Sans ces librairies, Qt ne peut pas démarrer correctement avec le backend `xcb`, même s’il est installé.  
+🇬🇧 Without these libraries, Qt won't start properly with the `xcb` backend, even if it's installed.
 
 ## 🖼️ Aperçu / Preview
 
