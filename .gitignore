@@ -1,0 +1,21 @@
+# Environnement virtuel
+venv/
+
+# Fichiers de config utilisateur
+.env
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Fichiers de log ou data
+*.log
+
+# Fichiers spécifiques à VSCode ou PyCharm
+.vscode/
+.idea/
+
+# Systèmes Unix/Mac
+.DS_Store
+
